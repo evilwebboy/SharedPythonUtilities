@@ -78,5 +78,6 @@ def clean_player_name(name):
     for find_text, replace_text in _REPLACEMENTS.items():
         cleaned = cleaned.replace(find_text, replace_text)
 
-    cleaned = _SUFFIX_PATTERN.sub("", cleaned.strip())
+    cleaned = re.sub(r" +", " ", cleaned).strip()
+    cleaned = _SUFFIX_PATTERN.sub("", cleaned)
     return cleaned.strip()
