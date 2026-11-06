@@ -10,6 +10,8 @@ Reusable Python functions shared by the sports-data repositories.
 - `PLAYER_EXCEPTIONS_NFL`: maps raw National Football League player names to their standardized clean names.
 - `PLAYER_EXCEPTIONS_NHL`: maps raw National Hockey League player names to their standardized clean names.
 
+- `TEAM_NAMES_CFB`: maps college football team abbreviations and aliases to canonical team names.
+
 ## Current functions
 
 - `clean_player_name(name)`: applies the player-name standardization rules
@@ -27,6 +29,7 @@ from shared_python_utilities import (
     PLAYER_EXCEPTIONS_NBA,
     PLAYER_EXCEPTIONS_NFL,
     PLAYER_EXCEPTIONS_NHL,
+    TEAM_NAMES_CFB,
 )
 
 df["Player Name"] = df["Player Name"].map(clean_player_name)
