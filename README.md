@@ -2,6 +2,10 @@
 
 Reusable Python functions shared by the sports-data repositories.
 
+## Available lookup dictionaries
+
+- `PLAYER_EXCEPTIONS_CFB`: maps raw college football player names to their standardized clean names.
+
 ## Current functions
 
 - `clean_player_name(name)`: applies the player-name standardization rules
@@ -12,7 +16,7 @@ Reusable Python functions shared by the sports-data repositories.
 After installing this repository as a Python dependency:
 
 ```python
-from shared_python_utilities import clean_player_name
+from shared_python_utilities import clean_player_name, PLAYER_EXCEPTIONS_CFB
 
 df["Player Name"] = df["Player Name"].map(clean_player_name)
 ```
