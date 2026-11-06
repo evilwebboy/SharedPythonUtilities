@@ -8,6 +8,7 @@ Reusable Python functions shared by the sports-data repositories.
 - `PLAYER_EXCEPTIONS_MLB`: maps raw Major League Baseball player names to their standardized clean names.
 - `PLAYER_EXCEPTIONS_NBA`: maps raw National Basketball Association player names to their standardized clean names.
 - `PLAYER_EXCEPTIONS_NFL`: maps raw National Football League player names to their standardized clean names.
+- `PLAYER_EXCEPTIONS_NHL`: maps raw National Hockey League player names to their standardized clean names.
 
 ## Current functions
 
@@ -25,6 +26,7 @@ from shared_python_utilities import (
     PLAYER_EXCEPTIONS_MLB,
     PLAYER_EXCEPTIONS_NBA,
     PLAYER_EXCEPTIONS_NFL,
+    PLAYER_EXCEPTIONS_NHL,
 )
 
 df["Player Name"] = df["Player Name"].map(clean_player_name)
