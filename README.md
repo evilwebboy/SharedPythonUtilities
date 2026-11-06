@@ -12,6 +12,7 @@ Reusable Python functions shared by the sports-data repositories.
 
 - `TEAM_NAMES_CFB`: maps college football team abbreviations and aliases to canonical team names.
 - `TEAM_NAMES_MLB`: maps MLB team abbreviations and aliases to canonical team names.
+- `TEAM_NAMES_NBA`: maps NBA team abbreviations and aliases to canonical team names.
 
 ## Current functions
 
@@ -32,6 +33,7 @@ from shared_python_utilities import (
     PLAYER_EXCEPTIONS_NHL,
     TEAM_NAMES_CFB,
     TEAM_NAMES_MLB,
+    TEAM_NAMES_NBA,
 )
 
 df["Player Name"] = df["Player Name"].map(clean_player_name)
