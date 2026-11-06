@@ -2,5 +2,6 @@
 
 from .player_names import clean_player_name
 from .playerexceptions_cfb import PLAYER_EXCEPTIONS_CFB
+from .playerexceptions_mlb import PLAYER_EXCEPTIONS_MLB
 
-__all__ = ["clean_player_name", "PLAYER_EXCEPTIONS_CFB"]
+__all__ = ["clean_player_name", "PLAYER_EXCEPTIONS_CFB", "PLAYER_EXCEPTIONS_MLB"]
