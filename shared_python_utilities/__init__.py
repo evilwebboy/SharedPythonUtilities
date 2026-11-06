@@ -6,5 +6,6 @@ from .playerexceptions_mlb import PLAYER_EXCEPTIONS_MLB
 from .playerexceptions_nba import PLAYER_EXCEPTIONS_NBA
 from .playerexceptions_nfl import PLAYER_EXCEPTIONS_NFL
 from .playerexceptions_nhl import PLAYER_EXCEPTIONS_NHL
+from .teamnames_cfb import TEAM_NAMES_CFB
 
-__all__ = ["clean_player_name", "PLAYER_EXCEPTIONS_CFB", "PLAYER_EXCEPTIONS_MLB", "PLAYER_EXCEPTIONS_NBA", "PLAYER_EXCEPTIONS_NFL", "PLAYER_EXCEPTIONS_NHL"]
+__all__ = ["clean_player_name", "PLAYER_EXCEPTIONS_CFB", "PLAYER_EXCEPTIONS_MLB", "PLAYER_EXCEPTIONS_NBA", "PLAYER_EXCEPTIONS_NFL", "PLAYER_EXCEPTIONS_NHL", "TEAM_NAMES_CFB"]
